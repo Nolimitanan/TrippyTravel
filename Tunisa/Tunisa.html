@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	  <link rel="stylesheet" href="css/bootstrap.min.css">
+	  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+      <link rel="stylesheet" href="css/style.css">
+	  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	  <title>Tunisa</title>
+    <style type="text/css">
+      .container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 205px;
+  height: 100%;
+  width: 44%;
+  opacity: 0;
+  transition: .5s ease;
+background-color:#FF642D;
+border-radius: 5px;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+ 
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #ff642d;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+  height: 40px;
+  width: 40px;
+  margin: 0;
+  padding: 0;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+    </style>
+   
+  </head>
+  <body>
+  	<nav>
+	    <div class="logo"><img src="Tunisa.png" >  	
+      </div>
+  	  <ul>
+  		  <li> <a href="#pk">Packages</a></li>
+  		  <li> <a href="#pp">Popular Places</a></li>
+  		  <li> <a href="#wv">Watch Video</a></li>
+          <li> <a href="#nw">News</a></li>
+  		  <li> <a href="#fb">Feedback</a></li>
+  		  <li> <a href="#rt">Rate</a></li>
+  	  </ul>
+    </nav>
+	  <div class="sections">
+			<div style="border: 0; height: 600px; width:100%;background:white;" id="pk">
+			  <h2> Packages</h2>
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+          </ol>
+          <div class="container">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img class="a-block w-40" src="great-mosque-kairouan-1200.jpg" alt="First slide">
+              <div class="overlay">
+                <div class="text">
+                  <h3>Kairouan</h3>
+                  <p>Dar ALOUINI offer 50% with price 2500EGP per night</p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img class="a-block w-40" src="Tunis.jpg" alt="Second slide">
+              <div class="overlay">
+                <div class="text">
+                 <h3>Tunis</h3>
+                 <p>Hotel Carlton gives you the chance to stay with 1500EGP per night.</p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img class="a-block w-40" src="Sousse.jpg" alt="Third slide">
+               <div class="overlay">
+                <div class="text">
+                 <h3>Sousse</h3>
+                 <p>Mövenpick Resort & Marine Spa Sousse offers 30% off with 1250EGP per night.</p>
+                </div>
+              </div>
+            </div>
+              <div class="carousel-item">
+              <img class="a-block w-40" src="Bizerte.jpg" alt="Forth slide">
+               <div class="overlay">
+                <div class="text">
+                 <h3>Bizerte</h3>
+                 <p>Bizerta Charly's is the best place to take a vacation there with 1621EGP per night</p>
+                </div>
+              </div>
+            </div>
+              <div class="carousel-item">
+              <img class="a-block w-40" src="Kasbah_of_Sfax.jpg" alt="Fifth slide">
+               <div class="overlay">
+                <div class="text">
+                 <h3>Sfax</h3>
+                 <p>HOTEL PALAIS ROYAL give you the best deals with 4800EGP for a 4 days 3 nights.</p>
+                </div>
+              </div>
+            </div>
+              <div class="carousel-item">
+              <img class="a-block w-40" src="gabes.jfif" alt="Sixth slide">
+               <div class="overlay">
+                <div class="text">
+                 <h3>Gabes</h3>
+                 <p>Auberge de Tamezret offers a 2561EGP per night.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+          
+	    <div id="pp"  style="background-image: url(back.png);  background-repeat:no-repeat ;align-content: center;width: 100%; height: 600px;">
+		    <h2 style="padding-top: 50px;">Popular Places</h2>
+		    <div id="carouselExampleIndicators1" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators1" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators1" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators1" data-slide-to="2"></li>
+            <li data-target="#carouselExampleIndicators1" data-slide-to="3"></li>
+            <li data-target="#carouselExampleIndicators1" data-slide-to="4"></li>
+          </ol>
+          <div class="container">
+         
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <a href="https://goo.gl/maps/PsB96TNt3YL2caWk9">
+              <img class="a-block w-40" src="great-mosque-kairouan-1200.jpg" alt="First slide">
+              <div class="overlay">
+                <div class="text">
+                  <h3>mosque-kairouan</h3>
+                </div>
+              </div>
+            </div>
+          </a>
+            <div class="carousel-item">
+              <a href="https://goo.gl/maps/6xAqDPrAMxTKpY6r8">
+              <img class="a-block w-40" src="Sidi Bou Said.jpg" alt="Second slide">
+              <div class="overlay">
+                <div class="text">
+                  <h3>Sidi Bou Said</h3>
+                </div>
+              </div>
+            </div>
+            </a>
+            <div class="carousel-item">
+              <img class="a-block w-40" src="Sousse Medina.jpg" alt="Third slide">
+              <a href="https://goo.gl/maps/PbnLrzwW8uWVNAhd6">
+              <div class="overlay">
+              <div class="text">
+                <h3>Sousse Medina</h3>
+              </div>
+              </div>
+            </div>
+            </a>
+              <div class="carousel-item">
+              <img class="a-block w-40" src="Kasbah_of_Sfax.jpg" alt="Forth slide">
+              <a href="https://goo.gl/maps/ZYuGDBG93d4JHd969">
+              <div class="overlay">
+                <div class="text">
+                  <h3> Kasbah_of_Sfax </h3>
+                </div>
+              </div>
+            </div>
+          </a>
+              <div class="carousel-item">
+              <img class="a-block w-40" src="El Djem Amphitheater.jpg" alt="Fifth slide">
+              <a href="https://goo.gl/maps/bREttrxGeBsTeEkc9">
+              <div class="overlay">
+                <div class="text">
+                  <h3> El Djem Amphitheater</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </a>
+          <a class="carousel-control-prev" href="#carouselExampleIndicators1" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleIndicators1" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+      <div class="sections"> 
+	    <div id="wv"style="width: 100%; height: 600px;"class="container">
+        <div class="row">
+          <h1 style="text-align: center;margin-left: 40%;">Watch Video</h1>
+        </div>
+		    <div class="row">
+          <div class="col">
+            <video src="10 Beautiful Places to Visit in Tunisia _ Travel Videos _ SKY Travel.mp4" width="100%" autoplay controls ></video>
+          </div>
+          <div class="col" style="text-align: justify;">
+            <h2 style="margin: 0;padding: 0;">Description:</h2>
+            <p style="margin: 0;padding: 0;">
+              It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. 
+              The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, 
+              as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages 
+              and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web 
+              sites still in their infancy. Various versions have evolved over the years, sometimes by accident, 
+              sometimes on purpose (injected humour and the like).
+            </p>
+          </div>
+        </div>
+      </div>
+		  </div>
+          <div class="sections">
+			<div id="nw"  style="background-image: url(back.png);  background-repeat:no-repeat ;align-content: center;width: 100%; height: 600px;">
+			  <h2 style="padding-top: 50px;"> News</h2>
+        <div id="carouselExampleIndicators3" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators3" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators3" data-slide-to="2"></li>
+            <li data-target="#carouselExampleIndicators3" data-slide-to="3"></li>
+            <li data-target="#carouselExampleIndicators3" data-slide-to="4"></li>
+            <li data-target="#carouselExampleIndicators3" data-slide-to="5"></li>
+          </ol>
+          <div class="container">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <a href="https://www.africanews.com/2021/05/26/tunisia-hopes-to-revive-tourism-sector-via-eastern-european-visitors//">
+              <img class="a-block w-40" src="news1.jfif" alt="First slide">
+              <div class="overlay">
+                <div class="text">
+                  <p>Tunisia hopes to revive tourism sector via Eastern European visitors</p>
+                </div>
+              </div>
+              </a>
+            </div>
+            <div class="carousel-item">
+              <a href="https://www.independent.co.uk/travel/news-and-advice/tunisia-foreign-office-tourism-tunisair-british-airways-lufthansa-air-france-vueling-a7740051.html">
+              <img class="a-block w-40" src="news2.jpg" alt="Second slide">
+              <div class="overlay">
+                <div class="text">
+                 <p>TUNISIA TOURISM GETS SURPRISE BOOST DESPITE FOREIGN OFFICE WARNINGS</p>
+                </div>
+              </div>
+              </a>
+            </div>
+            <div class="carousel-item">
+              <a href="https://www.independent.co.uk/travel/africa/tunisia-holidays-roman-ruins-sites-unesco-beach-alternative-why-visit-safe-a8171776.html">
+              <img class="a-block w-40" src="news3.jpg" alt="Third slide">
+               <div class="overlay">
+                <div class="text">
+                 <p>TUNISIA HOLIDAYS: WHY TOURISTS SHOULD LOOK BEYOND THE BEACH AND DISCOVER ITS ANCIENT ROMAN HERITAGE</p>
+                </div>
+              </div>
+              </a>
+            </div>
+              <div class="carousel-item">
+              <img class="a-block w-40" src="news4.jpg" alt="Forth slide">
+              <a href="https://travelweekly.co.uk/news/air/tunisia-eases-travel-restrictions-for-jabbed-visitors">
+               <div class="overlay">
+                <div class="text">
+                 <p>Tunisia eases travel restrictions for jabbed visitors</p>
+                </div>
+              </div>
+            </div>
+          </a>
+              <div class="carousel-item">
+                <a href="https://www.independent.co.uk/travel/news-and-advice/tunisia-foreign-office-terrorism-tourism-libya-sousse-tunis-thomas-cook-peter-fankhauser-a7862406.html">
+              <img class="a-block w-40" src="news5.jpg" alt="Fifth slide">
+               <div class="overlay">
+                <div class="text">
+                 <p>THOMAS COOK COULD RESTART TUNISIA PACKAGE HOLIDAYS AS EARLY AS SPRING 2018</p>
+                </div>
+              </div>
+            </a>
+            </div>
+              <div class="carousel-item">
+                <a href="independent.co.uk/travel/news-and-advice/tunisia-state-emergency-extended-safe-uk-tourists-holidays-what-means-a8259791.html">
+              <img class="a-block w-40" src="news6.jpg" alt="Sixth slide">
+               <div class="overlay">
+                <div class="text">
+                 <p>TUNISIA STATE OF EMERGENCY: IS IT SAFE TO VISIT FOR UK TOURISTS?</p>
+                </div>
+              </div>
+            </div>
+            </a>
+          </div>
+        </div>
+          <a class="carousel-control-prev" href="#carouselExampleIndicators3" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleIndicators3" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+		  <div id="fb"style="background-image: url(bg2.png); width: 100%; height: 600px;">
+		    <div class="w3-container w3-content w3-padding-64" style="max-width:800px;" id="contact">
+                <br><br><br>
+          <h2 class="w3-wide w3-center">Feedback</h2>
+          <p class="w3-opacity w3-center" style="color: #FF642D"><i>Drop a note!</i></p>
+          <div class="w3-row w3-padding-32">
+            <div class="w3-col m6 w3-large w3-margin-bottom">
+              <i class="fa fa-map-marker" style="width:30px"></i>Alexandria , Egypt<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-phone" style="width:30px"></i> Phone:+20 01555555555<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-envelope" style="width:30px"> </i> Email: trippy@gmail.com<br>
+            </div>
+            <div class="w3-col m6">
+              <form action="phpmailer.php" target="_blank" method="POST">
+                <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+                  <div class="w3-half">
+                    <input class="w3-input w3-border" type="text" placeholder="Name" required name="name">
+                  </div>
+                  <div class="w3-half">
+                    <input class="w3-input w3-border" type="text" placeholder="Email" required name="email">
+                  </div>
+                </div>
+                <input class="w3-input w3-border" type="text" placeholder="Message" required name="message">
+                <button class="w3-button w3-section w3-right" type="submit" style="background-color:#ff642d;color: white;">SEND</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+          <center>
+            <h2 style="width: 100%; height: 10px;" id="rt">Rate Us</h2>
+            <div class="rating"> 
+              <input type="radio" name="rating" value="5" id="5"><label for="5">☆</label> 
+              <input type="radio" name="rating" value="4" id="4"><label for="4">☆</label> 
+              <input type="radio" name="rating" value="3" id="3"><label for="3">☆</label> 
+              <input type="radio" name="rating" value="2" id="2"><label for="2">☆</label> 
+              <input type="radio" name="rating" value="1" id="1"><label for="1">☆</label>
+            </div>
+          </center>
+    </div>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">^</button>
+<script>
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+	  <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/custom.js"type="text/javascript"></script>
+    <script src="js/scroll.js"type="text/javascript"></script>
+  </body>
+</html>
